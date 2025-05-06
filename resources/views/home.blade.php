@@ -83,7 +83,7 @@
                                     <td class="px-6 py-4 whitespace-nowrap text-start text-sm font-medium">
                                        <a href="{{route('edit', $post->id)}}" class="btn bg-green-600 px-4 py-1 rounded text-white">Edit</a>
                                        
-                                       <a href="{{route('edit', $post->id)}}" class="btn bg-red-500 px-4 py-1 rounded text-white">Delete</a>
+                                       <a href="{{route('delete', $post->id)}}" class="btn bg-red-500 px-4 py-1 rounded text-white">Delete</a>
                                        
                                     </td>
                                 </tr>

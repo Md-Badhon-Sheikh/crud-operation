@@ -81,4 +81,11 @@ class PostController extends Controller
         return redirect('/')->with('success', 'Your post has been Updated!!');
 
     }
+    public function fileDelete($id){
+        $post = Post::findOrFail($id);
+        $post->delete();
+
+        return redirect('/')->with('success', 'Your post has been Deleted!!');
+    }
+
 }
