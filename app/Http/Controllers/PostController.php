@@ -42,8 +42,8 @@ class PostController extends Controller
         $post->image = $imageName;
 
         $post->save();
-
-        return redirect('/')->with('success', 'Your post has been created!!');
+        flash()->success('Your post has been created!!');
+        return redirect('/');
     }
 
     public function editData($id)
@@ -77,15 +77,15 @@ class PostController extends Controller
 
 
         $post->save();
-
-        return redirect('/')->with('success', 'Your post has been Updated!!');
+        flash()->success('Your post has been Updated!!');
+        return redirect('/');
 
     }
     public function fileDelete($id){
         $post = Post::findOrFail($id);
         $post->delete();
-
-        return redirect('/')->with('success', 'Your post has been Deleted!!');
+        flash()->success('Your post has been Deleted!!');
+        return redirect('/');
     }
 
 }

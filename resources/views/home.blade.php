@@ -61,14 +61,14 @@
             <div class="-m-1.5 overflow-x-auto">
                 <div class="p-1.5 min-w-full inline-block align-middle">
                     <div class="overflow-hidden">
-                        <table class="min-w-full divide-y divide-gray-200 dark:divide-neutral-700">
-                            <thead>
-                                <tr>
-                                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">Id</th>
-                                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">Name</th>
-                                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">Email</th>
-                                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">Image</th>
-                                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">Action</th>
+                        <table class="min-w-full divide-y divide-gray-200 dark:divide-neutral-700 border-2 border-green-600">
+                            <thead class="bg-green-600 ">
+                                <tr  class="text-white">
+                                    <th scope="col" class=" px-6 py-3 text-start text-xs font-medium text-white uppercase dark:text-neutral-500">Id</th>
+                                    <th scope="col" class=" px-6 py-3 text-start text-xs font-medium text-white uppercase dark:text-neutral-500">Name</th>
+                                    <th scope="col" class=" px-6 py-3 text-start text-xs font-medium text-white uppercase dark:text-neutral-500">Email</th>
+                                    <th scope="col" class=" px-6 py-3 text-start text-xs font-medium text-white uppercase dark:text-neutral-500">Image</th>
+                                    <th scope="col" class=" px-6 py-3 text-center text-xs font-medium text-white uppercase dark:text-neutral-500">Action</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-gray-200 dark:divide-neutral-700">

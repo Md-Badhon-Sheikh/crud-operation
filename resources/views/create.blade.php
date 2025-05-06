@@ -52,7 +52,7 @@
             <div class="my-10 px-20">
                <form action="{{route('store')}}" method="POST" enctype="multipart/form-data">
 
-                <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-4 border-2 border-green-600 py-5 px-8 rounded">
                     @csrf
                     <label for="name" class="font-semibold ">Name</label>
                     <input type="text" value="{{old('name')}}" name="name" class="border-2 border-gray-300 py-2 px-2 rounded">
