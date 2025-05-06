@@ -79,7 +79,7 @@
                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-neutral-200"> {{$post->id}} </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">{{$post->name}}</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">{{$post->email}}</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200"> <img src="images/{{$post->image}}" width="80px" alt=""> </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200"> <img src="images/{{$post->image}}" width="50px" alt=""> </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-start text-sm font-medium">
                                        <a href="{{route('edit', $post->id)}}" class="btn bg-green-600 px-4 py-1 rounded text-white">Edit</a>
                                        
@@ -92,6 +92,7 @@
 
                             </tbody>
                         </table>
+                        {{$posts -> links()}}
                     </div>
                 </div>
             </div>
