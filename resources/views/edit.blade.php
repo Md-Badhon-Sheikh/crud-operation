@@ -45,24 +45,25 @@
         </div>
         <section class="mt-4 px-20 mx-auto">
             <div class="flex justify-between ">
-                <a href="/" class="btn bg-green-600 rounded text-white"> <i class="fa-solid fa-backward"></i> Create</a>
+                <a href="/" class="btn bg-green-600 rounded text-white"> Edit {{$ourPost->name}}</a>
                 <a href="/" class="btn bg-green-600 rounded text-white">Back to home</a>
             </div>
 
             <div class="my-10 px-20">
-               <form action="{{route('store')}}" method="POST" enctype="multipart/form-data">
+               <form action="{{route('update', $ourPost->id)}}" method="POST" enctype="multipart/form-data">
 
                 <div class="flex flex-col gap-4">
                     @csrf
                     <label for="name" class="font-semibold ">Name</label>
-                    <input type="text" value="{{old('name')}}" name="name" class="border-2 border-gray-300 py-2 px-2 rounded">
+                    <input type="text"  name="name" class="border-2 border-gray-300 py-2 px-2 rounded" value="{{$ourPost->name}}">
+
                     @error('name')
                     <p class="text-red-500">{{$message}}</p>
                     @enderror
 
 
                     <label for="email" class="font-semibold ">Email</label>
-                    <input type="email" value="{{old('email')}}" name="email" class="border-2 border-gray-300 py-2 px-2 rounded">
+                    <input type="email" value="{{$ourPost->email}}" name="email" class="border-2 border-gray-300 py-2 px-2 rounded">
                     @error('email')
                     <p class="text-red-500">{{$message}}</p>
                     @enderror
@@ -85,4 +86,4 @@
     </main>
 </body>
 
-</html>
+</html> 
